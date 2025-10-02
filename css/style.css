@@ -1,0 +1,579 @@
+html, body {
+  margin: 0;
+  padding: 20;
+  box-sizing: content-box;    
+}
+
+.header{
+    background-image: url(../assets/patrick-tomasso-GXXYkSwndP4-unsplash.jpg);
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.encabezado {
+    color: #ffffff; 
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 350px;
+}
+
+.icono {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    gap: 300px;
+    margin-top: 300px;
+}
+
+.icono li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #163026;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.icono a:hover {
+    color: black;
+    background-color: #849687;
+}
+
+.section1 {
+  background-color: #163026;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.section2 {
+  background-color: #849687;
+  height: auto;
+  flex-direction: column;
+  display: flex;  
+}
+
+#encabezadodeicono {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+
+}
+
+.carrusel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 60px;
+    padding: 20px;
+}
+
+.carrusel img{
+    max-width: 100%;
+    height: 500px;
+    object-fit: contain;
+    background-color: #000;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.productoscarrusel {
+    flex: 0 0 100;
+    background-color: #849687;
+    border-radius: 80px;
+    padding: 100px;
+    scroll-snap-align: start;
+}
+
+.menu-dia {
+  text-align: center;
+  padding: 20px;
+  background-color: #849687;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.menu-dia h3{
+  font-size: 2.0rem;
+}
+
+.tarjeta {
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #163026;
+}
+
+.tarjeta img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.info {
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.precio {
+    font-weight: bold;
+    margin-top: 5px;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+
+.fondo  {
+    background-color: #163026;
+    color: #ffffff;
+}
+
+.footer {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer div {
+    flex: 1;
+    padding: 0 90px;
+}
+
+.footer h2 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    margin-top: 15px; 
+}
+
+.sectionquienessomos1{
+    background-color: #163026;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.sectionquienessomos1 img{
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sectionquienessomos1 p{
+    flex: 1;
+    line-height: 1.6;
+    color:#ffffff;
+}
+
+.sectionquienessomos2{
+    background-color: #849687;
+    padding: 20px;
+    flex-direction: column;
+    display: flex;
+    color: #000 ;
+}
+
+.sectionquienessomos2 img{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sectionquienessomos2 p{
+    font-size: 25px;
+    flex: 1;
+    line-height: 1.6;
+}
+
+.galeria h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.categoria {
+  margin-bottom: 30px;
+}
+
+.categoria h3 {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.categoria ul {
+  list-style: none;
+  padding: 0;
+}
+
+.categoria li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 10px;
+}
+
+.categoria li div {
+  flex: 1;
+}
+
+.categoria h4 {
+  margin: 0;
+}
+
+.categoria p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.precio {
+  font-weight: bold;
+  margin-left: 400px;
+  white-space: nowrap;
+  color: #000;
+}
+
+.galeria {
+    background-color: #163026;   
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #849687;                 
+    border-radius: 8px;               
+    overflow: hidden;                 
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.card p {
+    padding: 10px;
+    color: #000;
+    font-size: 0.95rem;
+}
+
+.sectioncontacto {
+    width: none;
+    max-width: 100x;
+    background: #849687;
+    padding: 50px;
+    border-radius: 0px;
+}
+
+.sectioncontacto h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+.formulariocontacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulariocontacto label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.formulariocontacto input,
+.formulariocontacto textarea {
+    padding: 10px;
+    border: 1px solid #cdd1d4;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #3a4750;
+    outline: none;
+}
+
+.contactobutton {
+    background: #163026;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+  .contactobutton:hover {
+    background-color: #2c363f;
+}
+
+
+@media (max-width: 780px) {
+    
+    .encabezado {
+        font-size: 2.0rem; 
+        margin-bottom: 50px; 
+    }
+    
+    .icono {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 100px; 
+        padding: 10px 20px; 
+    }
+
+    .icono li a {
+        text-decoration: none;
+        color: #ffffff; 
+        background-color: transparent; 
+        padding: 0; 
+        border-radius: 0;
+        font-weight: bold; 
+        font-size: 1.2rem;
+    }
+
+    .icono a:hover {
+        color: #849687; 
+        background-color: transparent;
+    }
+    
+
+    .icono li a {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    }
+
+    .carrusel img {
+    height: 300px; 
+    object-fit: cover; 
+    }
+
+    .productoscarrusel {
+        flex: 0 0 calc(100% - 40px);
+        padding: 10px;
+        border-radius: 20px;
+    }
+   
+    .menu-dia {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .menu-item {
+        width: 48%; 
+        margin: 5px 1%; 
+        display: block; 
+        box-sizing: border-box;
+    }
+
+    .tarjeta {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 5px; 
+    }
+    
+    .tarjeta img {
+        width: 150px; 
+        height: 150px;
+    }
+    
+    .info, .precio {
+        font-size: 0.9rem; 
+        text-align: center; 
+    }
+
+   .footer {
+        flex-direction: column; 
+    }
+
+    .footer div {
+        padding: 20px; 
+    }
+
+    .sectionquienessomos1 {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 10px; 
+    }
+
+    .sectionquienessomos1 img {
+        max-width: 80%; 
+        height: auto;
+        display: block; 
+        margin: 10px auto; 
+    }
+
+    .sectionquienessomos1 p {
+        text-align: justify; 
+        width: 100%; 
+        font-size: 1rem; 
+        line-height: 1.5;
+        color: #ffffff;
+    }
+
+    .sectionquienessomos2 {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 0 10px;
+    }
+    
+    .sectionquienessomos2 img {
+        max-width: 90%; 
+        height: auto;
+        display: block; 
+        margin: 10px auto; 
+    }
+
+    .sectionquienessomos2 p {
+        text-align: justify; 
+        width: 100%; 
+        font-size: 1rem; 
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .menu {
+        padding: 10px;
+    }
+
+    .categoria li {
+        flex-wrap: wrap; 
+        align-items: center; 
+        margin-bottom: 10px; 
+        padding-bottom: 5px;
+    }
+
+    .categoria li div {
+        flex: 0 0 100%; 
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .categoria h4 {
+        width: 100%; 
+        font-size: 1rem;
+        text-align: left; 
+    }
+
+    .categoria p {
+        font-size: 0.8rem; 
+        color: #666; 
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .precio {
+        flex-basis: auto; 
+        margin-left: 0; 
+        align-self: flex-end; 
+        font-size: 1rem;
+    }
+
+    .categoria li {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        align-items: flex-start;
+    }
+
+    .categoria li div {
+        flex: 1 1 70%; 
+        display: block; 
+        padding-right: 5px; 
+    }
+
+    .precio {
+        flex: 0 0 auto; 
+        margin-left: 0;
+        align-self: flex-start; 
+        order: 2;
+    }
+    
+    .categoria h4 {
+        font-size: 1rem;
+    }
+
+    .categoria p {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+
+    .galeria h2 {
+        font-size: 1.8rem; 
+    }
+
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
+        padding: 0 5px; 
+    }
+
+    .card img {
+        height: 150px; 
+    }
+
+    .card p {
+        padding: 8px; 
+        font-size: 0.8rem; 
+    }
+}
