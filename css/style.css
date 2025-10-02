@@ -165,7 +165,7 @@ html, body {
 }
 
 .sectionquienessomos1{
-    background-color: #163026;
+    background-color: #849687;
     padding: 20px;
     flex-direction: column;
     display: flex;
@@ -185,11 +185,11 @@ html, body {
 }
 
 .sectionquienessomos2{
-    background-color: #849687;
+    background-color: #163026;
     padding: 20px;
     flex-direction: column;
     display: flex;
-    color: #000 ;
+    color: #ffffff ;
 }
 
 .sectionquienessomos2 img{
