@@ -1,3 +1,288 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 20;
+  box-sizing: content-box;
+  overflow-x: hidden;
+}
 
+.header {
+  background-image: url("../assets/patrick-tomasso-GXXYkSwndP4-unsplash.jpg");
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.encabezado {
+  color: #ffffff;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 350px;
+}
+@media (max-width: 780px) {
+  .encabezado {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+}
+
+.icono {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 300px;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+}
+@media (max-width: 780px) {
+  .icono {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: flex-start;
+  }
+}
+.icono li a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #163026;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+.icono li a:hover {
+  color: #000000;
+  background-color: #849687;
+}
+@media (max-width: 780px) {
+  .icono {
+    gap: 10px;
+    margin-top: 100px;
+    padding: 10px 20px;
+  }
+  .icono li a {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+  .icono li a:hover {
+    color: #849687;
+    background-color: transparent;
+  }
+}
+
+.section1 {
+  background-color: #163026;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+}
+
+.section2 {
+  background-color: #849687;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+}
+
+#encabezadodeicono {
+  color: #ffffff;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.carrusel {
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: initial;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 60px;
+  padding: 20px;
+}
+.carrusel img {
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+  background-color: #000000;
+  border-radius: 10px;
+}
+.carrusel .productoscarrusel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 30%;
+  background-color: #849687;
+  border-radius: 80px;
+  padding: 30px;
+  scroll-snap-align: start;
+}
+
+.menu-dia {
+  text-align: center;
+  padding: 20px;
+  background-color: #849687;
+}
+.menu-dia h2 {
+  font-size: 2rem;
+}
+.menu-dia .menu-item {
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+  width: 45%;
+}
+.menu-dia .tarjeta {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: initial;
+  align-items: center;
+  gap: 15px;
+  background-color: #163026;
+}
+.menu-dia .tarjeta img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.menu-dia .tarjeta .info {
+  text-align: left;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.menu-dia .tarjeta .preciomenudia {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 780px) {
+  .carrusel img {
+    height: 300px;
+  }
+  .carrusel .productoscarrusel {
+    flex: 0 0 calc(100% - 40px);
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .menu-dia {
+    text-align: initial;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .menu-item {
+    width: 48%;
+    margin: 5px 1%;
+    display: block;
+    box-sizing: border-box;
+  }
+  .tarjeta {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+  .tarjeta img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.fondo {
+  background-color: #163026;
+  color: #ffffff;
+}
+
+.footer {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: initial;
+}
+@media (max-width: 780px) {
+  .footer {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+  }
+}
+.footer div {
+  flex: 1;
+  padding: 0 90px;
+}
+.footer h2 {
+  margin-bottom: 10px;
+}
+.footer p {
+  margin: 5px 0;
+}
+@media (max-width: 780px) {
+  .footer div {
+    padding: 20px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 15px 0;
+}
+
+.sectionquienessomos1 {
+  background-color: #849687; /* Usando variable para #849687 */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* 1. ESTILOS BASE (MOBILE FIRST) */
+}
+.sectionquienessomos1 img {
+  /* Tamaño de imagen en móvil (puede ser más pequeño para empezar) */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.sectionquienessomos1 p {
+  flex: 1;
+  line-height: 1.6;
+  color: #ffffff; /* Usando variable para #ffffff */
+}
+
+.sectionquienessomos2 {
+  background-color: #163026; /* Usando variable para #163026 */
+  padding: 20px;
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  /* 1. ESTILOS BASE (MOBILE FIRST) */
+}
+.sectionquienessomos2 img {
+  width: 100%; /* Ocupa el 100% del contenedor en móvil */
+  max-width: 250px; /* Pero no puede ser más grande de 250px */
+  height: auto;
+  border-radius: 8px;
+}
+.sectionquienessomos2 p {
+  font-size: 18px; /* Reduje un poco el tamaño base para móvil */
+  flex: 1;
+  line-height: 1.6;
+}
 
 /*# sourceMappingURL=main.css.map */

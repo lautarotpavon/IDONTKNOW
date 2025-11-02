@@ -1,0 +1,42 @@
+.fondo {
+    background-color: $color-fondo-primario; 
+    color: $color-p1;
+}
+
+.footer {
+    margin: 0;
+
+    @include flex-responsive(
+        $pc-dir: row, 
+        $pc-justify: space-between, 
+        $pc-align: initial, 
+        $movil-dir: column, 
+        $movil-justify: initial, 
+        $movil-align: initial
+    );
+
+    div {
+        flex: 1;
+        padding: 0 90px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+    
+    @media (max-width: 780px) {
+        div {
+            padding: 20px; 
+        }
+    }
+}
+
+.copyright {
+    text-align: center; 
+    font-size: 0.85rem;
+    padding: 15px 0; 
+}

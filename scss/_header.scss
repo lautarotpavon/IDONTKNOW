@@ -1,0 +1,66 @@
+.header {
+    @include encabezado-fondo('../assets/patrick-tomasso-GXXYkSwndP4-unsplash.jpg', 450px);
+}
+
+.encabezado {
+    color: $color-p1; 
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 350px;
+    
+    @media (max-width: 780px) {
+        font-size: 2.0rem; 
+        margin-bottom: 50px; 
+    }
+}
+
+.icono {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    gap: 300px;
+    margin-top: 300px;
+
+    @include flex-responsive(
+        $pc-dir: row, 
+        $pc-justify: initial, 
+        $pc-align: initial, 
+        $movil-dir: column, 
+        $movil-justify: initial, 
+        $movil-align: flex-start
+    );
+
+    li a {
+        text-decoration: none;
+        color: $color-p1;
+        background-color: $color-fondo-primario;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: bold;
+        
+        &:hover {
+            color: $color-p2;
+            background-color: $color-fondo-secundario;
+        }
+    }
+
+    @media (max-width: 780px) {
+        gap: 10px;
+        margin-top: 100px; 
+        padding: 10px 20px; 
+        
+        li a {
+            color: $color-p1; 
+            background-color: transparent; 
+            padding: 0; 
+            border-radius: 0;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            
+            &:hover {
+                color: $color-fondo-secundario; 
+                background-color: transparent;
+            }
+        }
+    }
+}

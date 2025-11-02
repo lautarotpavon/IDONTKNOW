@@ -1,0 +1,45 @@
+.sectionquienessomos1 {
+    background-color: $color-fondo-secundario; /* Usando variable para #849687 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    /* 1. ESTILOS BASE (MOBILE FIRST) */
+
+    img {
+        /* Tamaño de imagen en móvil (puede ser más pequeño para empezar) */
+        max-width: 100%; 
+        height: auto;
+        border-radius: 8px;
+    }
+
+    p {
+        flex: 1;
+        line-height: 1.6;
+        color: $color-p1; /* Usando variable para #ffffff */
+    }
+}
+
+
+.sectionquienessomos2 {
+    background-color: $color-fondo-primario; /* Usando variable para #163026 */
+    padding: 20px;
+    display: flex;
+    color: $color-p1;
+    flex-direction: column;
+
+    /* 1. ESTILOS BASE (MOBILE FIRST) */
+    
+    img {
+        width: 100%; /* Ocupa el 100% del contenedor en móvil */
+        max-width: 250px; /* Pero no puede ser más grande de 250px */
+        height: auto;
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 18px; /* Reduje un poco el tamaño base para móvil */
+        flex: 1;
+        line-height: 1.6;
+    }
+}

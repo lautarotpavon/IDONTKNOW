@@ -1,0 +1,63 @@
+$color-p1:#ffffff;
+$color-p2:#000000;
+$color-fondo-primario:#163026;
+$color-fondo-secundario:#849687;
+
+@mixin encabezado-fondo($url, $height) {
+    background-image: url($url);
+    height: $height;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin flex-responsive($pc-dir: row, $pc-justify: initial, $pc-align: initial, $movil-dir: column, $movil-justify: initial, $movil-align: initial) {
+    display: flex;
+    flex-direction: $pc-dir; 
+    justify-content: $pc-justify;
+    align-items: $pc-align;
+    
+    @media (max-width: 780px) {
+        flex-direction: $movil-dir; 
+        justify-content: $movil-justify;
+        align-items: $movil-align;
+    }
+}
+
+@mixin flex-layout($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+@mixin section-background($bg-color) {
+    background-color: $bg-color;
+    height: auto;
+    @include flex-layout(column, initial, initial); 
+}
+
+
+@mixin carrusel-product-structure($bg-color, $flex-size) {
+    @include flex-layout(column, center, center);
+    flex: 0 0 $flex-size;
+    background-color: $bg-color;
+    border-radius: 80px;
+    padding: 30px; 
+    scroll-snap-align: start;
+}
+
+
+@mixin menu-tarjeta-structure($bg-color, $pad, $img-size) {
+    padding: $pad;
+    @include flex-layout(row, initial, center);
+    gap: 15px;
+    background-color: $bg-color;
+
+    img {
+        width: $img-size;
+        height: $img-size;
+        object-fit: cover;
+    }
+}

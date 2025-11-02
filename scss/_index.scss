@@ -1,0 +1,109 @@
+.section1 {
+    @include section-background($color-fondo-primario);
+}
+
+.section2 {
+    @include section-background($color-fondo-secundario);
+}
+
+#encabezadodeicono {
+    color: $color-p1; 
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.carrusel {
+    @include flex-layout(row, initial, initial); 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 60px;
+    padding: 20px;
+    
+    img {
+        max-width: 100%;
+        height: 500px;
+        object-fit: cover;
+        background-color: $color-p2;
+        border-radius: 10px;
+    }
+    
+    .productoscarrusel {
+        @include carrusel-product-structure($color-fondo-secundario, 30%); 
+    }
+}
+
+.menu-dia {
+    text-align: center;
+    padding: 20px;
+    background-color: $color-fondo-secundario;
+    
+    h2{
+        font-size: 2.0rem;
+    }
+    
+    .menu-item {
+        display: inline-block;
+        margin: 20px;
+        vertical-align: top;
+        width: 45%; 
+    }
+    
+    .tarjeta {
+        @include menu-tarjeta-structure($color-fondo-primario, 15px, 300px); 
+        
+        .info {
+            text-align: left;
+            color: $color-p1;
+            font-size: 1.5rem;
+        }
+        
+        .preciomenudia {
+            font-weight: bold;
+            margin-top: 5px;
+            color: $color-p1;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 780px) {
+    
+    .carrusel {
+        
+        img {
+            height: 300px; 
+        }
+
+        .productoscarrusel {
+            flex: 0 0 calc(100% - 40px); 
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+    
+    .menu-dia {
+        text-align: initial; 
+        @include flex-layout(row, center, flex-start); 
+        flex-wrap: wrap; 
+        padding: 10px; 
+    }
+
+    .menu-item {
+        width: 48%; 
+        margin: 5px 1%; 
+        display: block; 
+        box-sizing: border-box;
+    }
+
+    .tarjeta {
+        flex-direction: column; 
+        align-items: center; 
+        padding: 5px; 
+        
+        img {
+            width: 150px; 
+            height: 150px;
+        }
+    }
+}
