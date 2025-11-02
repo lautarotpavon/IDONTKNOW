@@ -1,0 +1,71 @@
+.sectionquienessomos1 {
+    background-color: $color-fondo-secundario; 
+    padding: 50px 20px; 
+    color: $color-p1;
+
+    #encabezadodeicono {
+        color: $color-p1; 
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .container, .row {
+        align-items: center; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto;
+        max-width: 650px;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+
+    p {
+        line-height: 1.6;
+        color: $color-p1;
+        text-align: justify;
+        padding: 0 15px; 
+    }
+
+    @media (max-width: 768px) {
+        padding: 20px 0; 
+        p {
+            font-size: 1rem; 
+        }
+    }
+}
+
+.sectionquienessomos2 {
+    background-color: $color-fondo-primario; 
+    padding: 50px 20px;
+    color: $color-p1;
+    
+    .container, .row {
+        align-items: center; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto;
+        max-width: 400px; 
+        object-fit: cover; 
+        
+        border-radius: 8px;
+    }
+
+    p {
+        font-size: 25px;
+        line-height: 1.6;
+        padding-right:  15px;
+        padding-left: 0;
+    }
+    
+    @media (max-width: 768px) {
+        padding: 20px 0;
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -15,6 +15,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --watch scss/main.scss:css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
